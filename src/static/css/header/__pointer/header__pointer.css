@@ -1,0 +1,10 @@
+.header__pointer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 150px;
+    opacity: 0.9;
+    animation: logo 5s ease-in;
+    justify-self: center;
+    align-self: center;
+    z-index: 0;
+}

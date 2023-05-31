@@ -1,0 +1,9 @@
+.header {
+    display: grid;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    grid-area: header;
+    grid-template-columns: 1fr 1280px 1fr;
+    grid-template-rows: 1fr 100px;
+}

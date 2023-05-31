@@ -1,0 +1,49 @@
+{% extends 'includes/wrapper.html' %}
+{% load static %}
+{% block content %}
+    <nav class="menu">
+        <div class="menu__container">
+            <a class="menu__item">Концерты</a>
+            <a class="menu__item">Мерч</a>
+            <a class="menu__item">Контакты</a>
+        </div>
+        <div class="share">
+            <span class="share__span">Соцсети</span>
+            <div class="share__container">
+                <a class="share__link" href="#"><img class="share__logo share__logo_vk" src="{% static 'images/vk.png' %}"></a>
+                <a class="share__link" href="#"><img class="share__logo share__logo_youtube"
+                                                     src="{% static 'images/youtube.png' %}"></a>
+                <a class="share__link" href="#"><img class="share__logo share__logo_telegram"
+                                                     src="{% static 'images/telegram.png' %}"></a>
+                <a class="share__link" href="#"><img class="share__logo share__logo_insta"
+                                                     src="{% static 'images/insta.png' %}"></a>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <img class="header__logo" src="{% static 'images/sellout-1.png' %}">
+        <video class="header__video" src="{% static 'video/header__video.mp4' %}" autoplay="autoplay" loop="loop"
+               preload="auto" muted="true"></video>
+        <img class="header__pointer" src="{% static 'images/pointer.png' %}">
+    </header>
+    <section class="concerts">
+        <canvas class="stars" id="stars"></canvas>
+        <h2 class="concerts__heading">ЖДЕМ ТЕБЯ ТУТ &#9660;</h2>
+        <div class="carousel">
+            {% for event in events %}
+            <div class="carousel-item">
+                <div class="carousel-box">
+                    <div class="title">{{ event.name}}</div>
+                    <div class="num">{{ event.date }}</div>
+                    <img class="img" src="{{ event.poster }}">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="cursor"></div>
+        <div class="cursor cursor2"></div>
+        <!-- <iframe class="concerts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A109cd1e188304e1099b7befb481fcfe8e8ba228c20612a93afcf51990ed42698&amp;source=constructor"
+        frameborder="0"></iframe> -->
+    </section>
+{% endblock %}
+

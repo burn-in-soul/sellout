@@ -1,0 +1,8 @@
+.header__video {
+    background-color: white;
+    justify-self: start;
+    opacity: 0.5;
+    width: 100%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}

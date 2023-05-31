@@ -1,0 +1,81 @@
+.share__link {
+  color: white;
+}
+
+.share {
+  position: relative;
+  grid-area: menu__share;
+  align-self: center;
+  padding: 0px 20px;
+  border-radius: 80px;
+}
+.share:hover .share__span, .share.hover .share__span {
+  opacity: 0;
+}
+.share:hover .share__link, .share.hover .share__link {
+  border-radius: 50%;
+  margin: 0 10px;
+  font-size: 28px;
+  opacity: 1;
+}
+.share:hover .share__link:hover, .share.hover .share__link:hover {
+  color: #fff;
+}
+
+.share__span {
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  color: white;
+}
+.share__container {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+}
+.share__link {
+  line-height: 70px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -20px;
+}
+.share__link:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+.share__link:nth-child(1):hover {
+  background-color: #07f;
+}
+.share__link:nth-child(2):hover {
+  background-color: #f00;
+}
+.share__link:nth-child(3):hover {
+  background-color: #08c;
+}
+.share__link:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+.share__link:nth-child(4):hover {
+  background-color: #000;
+}
+.share__logo {
+  width: 40px;
+  height: 40px;
+}

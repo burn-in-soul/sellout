@@ -1,0 +1,11 @@
+.menu {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48px 2fr 1fr 48px;
+    grid-template-areas:
+    ". menu__container menu__share .";
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 100;
+}

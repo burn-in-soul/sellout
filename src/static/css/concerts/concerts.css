@@ -1,0 +1,7 @@
+.concerts {
+    color: white;
+    grid-area: concerts;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}

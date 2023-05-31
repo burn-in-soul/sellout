@@ -1,0 +1,11 @@
+.menu__container {
+    grid-area: menu__container;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}

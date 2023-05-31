@@ -1,0 +1,7 @@
+.menu__item {
+    height: 80px;
+    text-align: center;
+    color: white;
+    padding: 0px 20px;
+    cursor: pointer;
+}
