@@ -6,7 +6,7 @@
 
 Клоним проект с гита
 
-`git clone`
+`git clone git@github.com:burn-in-soul/sellout.git`
 
 Устанавливаем зависимости
 
