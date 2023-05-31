@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'events',
     'mainpage'
 ]
-
+if DEBUG:
+    INSTALLED_APPS += local_settings.LOCAL_APPS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -42,6 +42,8 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['127.0.0.1']
+
+LOCAL_APPS = ['django_extensions']
 ```
 
 Активируем среду poetry (аналог `source venv/bin/activate`)
