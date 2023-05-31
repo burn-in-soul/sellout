@@ -1,25 +1,6 @@
 {% extends 'includes/wrapper.html' %}
 {% load static %}
 {% block content %}
-    <nav class="menu">
-        <div class="menu__container">
-            <a class="menu__item">Концерты</a>
-            <a class="menu__item">Мерч</a>
-            <a class="menu__item">Контакты</a>
-        </div>
-        <div class="share">
-            <span class="share__span">Соцсети</span>
-            <div class="share__container">
-                <a class="share__link" href="#"><img class="share__logo share__logo_vk" src="{% static 'images/vk.png' %}"></a>
-                <a class="share__link" href="#"><img class="share__logo share__logo_youtube"
-                                                     src="{% static 'images/youtube.png' %}"></a>
-                <a class="share__link" href="#"><img class="share__logo share__logo_telegram"
-                                                     src="{% static 'images/telegram.png' %}"></a>
-                <a class="share__link" href="#"><img class="share__logo share__logo_insta"
-                                                     src="{% static 'images/insta.png' %}"></a>
-            </div>
-        </div>
-    </nav>
     <header class="header">
         <img class="header__logo" src="{% static 'images/sellout-1.png' %}">
         <video class="header__video" src="{% static 'video/header__video.mp4' %}" autoplay="autoplay" loop="loop"
@@ -31,13 +12,13 @@
         <h2 class="concerts__heading">ЖДЕМ ТЕБЯ ТУТ &#9660;</h2>
         <div class="carousel">
             {% for event in events %}
-            <div class="carousel-item">
-                <div class="carousel-box">
-                    <div class="title">{{ event.name}}</div>
-                    <div class="num">{{ event.start_date | date:'d.m' }}</div>
-                    <img class="img" src="{{ event.poster }}">
+                <div class="carousel-item">
+                    <div class="carousel-box">
+                        <div class="title">{{ event.name }}</div>
+                        <div class="num">{{ event.start_date | date:'d.m' }}</div>
+                        <img class="img" src="{{ event.poster }}">
+                    </div>
                 </div>
-            </div>
             {% endfor %}
         </div>
         <div class="cursor"></div>
