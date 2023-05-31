@@ -34,7 +34,7 @@
             <div class="carousel-item">
                 <div class="carousel-box">
                     <div class="title">{{ event.name}}</div>
-                    <div class="num">{{ event.date }}</div>
+                    <div class="num">{{ event.start_date | date:'d.m' }}</div>
                     <img class="img" src="{{ event.poster }}">
                 </div>
             </div>
