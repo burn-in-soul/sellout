@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'events',
-    'mainpage'
+    'mainpage',
+    'merch'
 ]
 if DEBUG:
     INSTALLED_APPS += local_settings.LOCAL_APPS
