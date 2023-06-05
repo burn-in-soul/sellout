@@ -7,4 +7,5 @@ from merch.models import Merch
 class MerchView(View):
 
     def get(self, request):
-        return render(request, 'merch.html', {'merch': Merch.objects.all()})
+        return render(request, 'merch.html',
+                      {'merch': Merch.objects.all().prefetch_related('images')})

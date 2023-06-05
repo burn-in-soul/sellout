@@ -1,3 +1,8 @@
 {% extends 'includes/wrapper.html' %}
 {% block content %}
+    {% for m in merch %}
+        {% for image in m.images.all %}
+            {{ image.image.url }}
+        {% endfor %}
+    {% endfor %}
 {% endblock %}

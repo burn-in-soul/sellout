@@ -9,4 +9,5 @@ class EventsView(View):
 
     def get(self, request):
         return render(request, 'events.html',
-                      {'events': Events.objects.filter(start_date__gte=timezone.now().date())})
+                      {'events': Events.objects.filter(
+                          start_date__gte=timezone.now().date())})
